@@ -19,13 +19,13 @@ const App: React.FC = () => {
         <StudentProvider>
           <Router>
             <Routes>
-              <Route path="/" element={<Login />} />
+              <Route index element={<Login />} />
               <Route element={<PrivateRoute />}>
-                <Route path="/test" element={<Home />}>
+                <Route path="/home" element={<Home />}>
                   <Route index element={<PendingWork />} />
                 </Route>
                 <Route path="/exam" element={<Exam />} />
-                <Route path="/home" element={<Reducer />} />
+                <Route path="/test" element={<Reducer />} />
               </Route>
               <Route path="*" element={<NotFound />} />
             </Routes>
