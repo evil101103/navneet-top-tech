@@ -1,0 +1,95 @@
+.login {
+  display: flex;
+  height: 100lvh;
+}
+
+.left__bar {
+  background-color: rgba(16, 117, 235, 1);
+  align-items: center;
+  width: 20%;
+}
+
+.right__bar {
+  margin: auto;
+  width: 300px;
+}
+
+.logo {
+  width: auto;
+  margin: 15px;
+}
+
+.img1 {
+  width: 100%;
+  height: 200px;
+  margin: 70px 0px;
+}
+
+.welcome {
+  color: white;
+  padding: 20px;
+}
+
+.welcome span {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+.welcome h4 {
+  text-align: center;
+}
+
+.input__div {
+  background: rgba(244, 246, 249, 1);
+  padding: 13px 15px;
+  border-radius: 10px;
+  margin: 15px 0px;
+}
+
+.input__box {
+  font-size: medium;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+
+.forgot__password {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+}
+.forgot__password a {
+  color: rgba(1, 181, 138, 1);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn {
+  width: 100%;
+  background: rgba(1, 181, 138, 1);
+  padding: 13px 15px;
+  margin: 15px 0px;
+  color: white;
+  border-radius: 10px;
+  border: none;
+}
+
+.login__phone {
+  width: 100%;
+  border: 2px solid rgba(1, 181, 138, 1);
+  border-radius: 10px;
+  padding: 13px 15px;
+}
+
+.icon {
+  color: rgba(28, 28, 30, 1);
+  margin: 0px 5px;
+}

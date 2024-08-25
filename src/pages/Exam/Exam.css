@@ -1,0 +1,96 @@
+.exam {
+  user-select: none;
+  margin: 10px;
+  width: 100%;
+  border: 1px solid rgba(222, 226, 230, 1);
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.125);
+}
+
+.exam__status {
+  max-width: 350px;
+  margin: 10px;
+  border: 1px solid rgba(222, 226, 230, 1);
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.125);
+}
+
+.exam__header,
+.exam__status h4 {
+  padding: 5px;
+  border-bottom: 1px solid rgba(222, 226, 230, 1);
+}
+.exam__header h4,
+.exam__status h4 {
+  color: red;
+}
+
+.status__buttons {
+  display: flex;
+  flex-direction: column;
+  font-size: small;
+  font-weight: 600;
+}
+
+.question__status {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question__status button {
+  width: 70px;
+  cursor: pointer;
+  margin: 4px;
+  border-radius: 5px;
+  font-weight: 600;
+}
+
+.unattempted {
+  border: 1px solid rgba(107, 107, 107, 1);
+  padding: 10px;
+}
+
+.attempted {
+  border: 3px solid rgba(1, 181, 138, 1);
+  padding: 8px;
+}
+
+.review {
+  border: 3px solid rgba(246, 188, 12, 1);
+  padding: 8px;
+}
+
+.skipped {
+  border: 3px solid rgba(56, 93, 223, 1);
+  padding: 8px;
+}
+
+.current {
+  background: rgb(111, 85, 213);
+  border: none;
+  color: white;
+}
+
+.submit_test {
+  width: 90%;
+  background: rgba(1, 181, 138, 1);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 10px 20px;
+}
+
+.no_btn {
+  width: 90%;
+  background: rgba(249, 88, 67, 1);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  color: white;
+  margin: 10px 20px;
+}

@@ -1,0 +1,76 @@
+{
+    "totalPages": 1,
+    "pageSize": 10,
+    "pageNo": 0,
+    "baseResponse": {
+        "data": [
+            {
+                "id": 9763,
+                "name": "HackathonMockQuestionPaper",
+                "marks": 20,
+                "description": "HackathonMockQuestionPaper",
+                "time": 60,
+                "allocationId":123,
+                "templateID": 1,
+                "questionPaperTypeID": 1,
+                "gradeID": 6,
+                "statusID": 2,
+                "examTypeID": 2,
+                "statusName": "Print",
+                "assignedBy":"Navneet Hackathon",
+                "generationModeID": 1,
+                "generationMode": "Manual",
+                "questionPaperCourseDetails": [
+                    {
+                        "courseID": 193,
+                        "courseName": "English VI(RISE)"
+                    },
+                    {
+                        "courseID": 194,
+                        "courseName": "Hindi VI(RISE)"
+                    },
+                    {
+                        "courseID": 195,
+                        "courseName": "Mathematics VI(RISE)"
+                    },
+                    {
+                        "courseID": 196,
+                        "courseName": "History VI(RISE)"
+                    },
+                    {
+                        "courseID": 197,
+                        "courseName": "Geography VI(RISE)"
+                    },
+                    {
+                        "courseID": 198,
+                        "courseName": "Civics VI(RISE)"
+                    },
+                    {
+                        "courseID": 199,
+                        "courseName": "Science VI (RISE)"
+                    }
+                ],
+                "questionPaperClassDetails": [
+                    {
+                        "classId": 3,
+                        "className": "Grade 6 - A"
+                    }
+                ],
+                "questionPaperSectionDetails": [
+                    {
+                        "sectionID": 2,
+                        "sectionName": "A"
+                    }
+                ],
+                "startDate": "2024-08-21",
+                "startTime": "9:00 AM",
+                "endDate": "2024-08-22",
+                "endTime": "10:00 PM"
+            }
+        ],
+        "result": {
+            "responseCode": 0,
+            "responseDescription": "Success"
+        }
+    }
+}
