@@ -44,7 +44,7 @@ const ReviewQuestion: React.FC<QuestionAnalysis> = ({ index, id }) => {
       }
     };
     fetchQuestion();
-  }, []);
+  }, [index]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;

@@ -1,40 +1,33 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import CountdownTimer from "../components/Timer/Timer";
 
-const ApiGetRequest: React.FC = () => {
-  const [response, setResponse] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+const Timer: React.FC = () => {
+  const [minutes, setMinutes] = useState<number>(0);
+  const [showTimer, setShowTimer] = useState<boolean>(false);
 
-  const fetchData = async () => {
-    try {
-      const res = await fetch('https://vs160816svc363862.mock.blazemeter.com/api/1.0.0/questionpaper', {
-        method: 'GET',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      });
+  const handleMinutesChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setMinutes(Number(e.target.value));
+  };
 
-      if (!res.ok) {
-        throw new Error('Network response was not ok');
-      }
-
-      const data = await res.json();
-      setResponse(JSON.stringify(data, null, 2));
-    } catch (err) {
-      setError(`Error: ${(err as Error).message}`);
-    }
+  const handleStartTimer = () => {
+    setShowTimer(true);
   };
 
   return (
     <div>
-      <button onClick={fetchData}>Fetch Data</button>
-      <div>
-        <h2>Response:</h2>
-        <pre>{response}</pre>
-        <h2>Error:</h2>
-        <pre>{error}</pre>
-      </div>
+      <h1>Countdown Timer</h1>
+      <input
+        type="number"
+        value={minutes}
+        onChange={handleMinutesChange}
+        min="1"
+        placeholder="Enter minutes"
+      />
+      <button onClick={handleStartTimer}>Start Timer</button>
+
+      {showTimer && <CountdownTimer initialMinutes={minutes} />}
     </div>
   );
 };
 
-export default ApiGetRequest;
+export default Timer;

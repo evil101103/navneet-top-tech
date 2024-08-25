@@ -1,5 +1,4 @@
 import { TrackStudent, StudentAction } from "../types/TrackStudent";
-import { TrackStudentExam } from "../types/TrackStudent";
 
 export const initialState: TrackStudent = {
   studentId: 10,

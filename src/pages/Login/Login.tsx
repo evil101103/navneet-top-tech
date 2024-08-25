@@ -31,7 +31,7 @@ const Login: React.FC = () => {
       // console.log("Login successful:", response);
       // const res = await axios.post("http://localhost:5000/students");
 
-      const { data, result } = responseData;
+      const { data } = responseData;
       console.log(data);
       login();
       navigate("/home");

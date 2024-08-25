@@ -32,8 +32,8 @@ const PendingWork: React.FC = () => {
     fetchExamData();
   }, []);
 
-  // if (loading) return <p>Loading...</p>;
-  // if (error) return <p>{error}</p>;
+  if (loading) return <p>Loading...</p>;
+  if (error) return <p>{error}</p>;
   return (
     <div className="pending_work">
       <span>Home / Pending Work / Online Assessments</span>
